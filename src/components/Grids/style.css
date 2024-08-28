@@ -1,0 +1,129 @@
+.student-grid {
+display: flex;
+flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    margin: 0 0 0 250px;
+}
+
+.student-grid-item {
+    display: flex;
+    justify-content: center;
+}
+
+.student-card {
+    background-color: #fff;
+    width: 290px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* width: 100%; */
+    max-width: 350px;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.student-card-header {
+    background-image: url('https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Placeholder for header image */
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.student-card-backgrond{
+  background-color:rgb(56, 189, 248);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.student-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    bottom: -40px;
+    background-color: #fff;
+}
+
+.student-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.student-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.student-location {
+    font-size: 14px;
+    color: #777;
+}
+
+.student-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.student-bio {
+    font-size: 14px;
+    color: #666;
+}
+
+.student-card-footer {
+    padding: 45px 20px 20px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.student-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.stat p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.stat p:last-child {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+.student-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
